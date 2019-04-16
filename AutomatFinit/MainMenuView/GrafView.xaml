@@ -1,0 +1,24 @@
+﻿<Window x:Class="AutomatFinit.MainMenuView.GrafView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutomatFinit.MainMenuView"
+        mc:Ignorable="d"
+        Title="GrafView" Height="450" Width="800">
+    <Grid>
+        <Canvas HorizontalAlignment="Left" Height="401" Margin="0,10,0,0" VerticalAlignment="Top" Width="793"/>
+        <Ellipse x:Name="drag" Height="50" Width="50" Fill="Green"
+     MouseMove="ellipse_MouseMove"
+     AllowDrop="True"
+     DragEnter="ellipse_DragEnter" DragLeave="ellipse_DragLeave"
+     DragOver="ellipse_DragOver" Drop="ellipse_Drop" Margin="146,101,597.333,269.667" RenderTransformOrigin="1.128,0.624" />
+        <Ellipse Height="50" Width="50" Fill="Green"
+     MouseMove="ellipse_MouseMove"
+     GiveFeedback="ellipse_GiveFeedback"
+     AllowDrop="True"
+     DragEnter="ellipse_DragEnter" DragLeave="ellipse_DragLeave"
+     DragOver="ellipse_DragOver" Drop="ellipse_Drop" Margin="552,255,191.333,115.667" />
+        
+    </Grid>
+</Window>

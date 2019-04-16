@@ -1,0 +1,28 @@
+﻿<Window x:Class="AutomatFinit.MainMenuView.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutomatFinit.MainMenuView"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="826.667">
+    <Grid Margin="0,10,3.333,0" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
+
+        <Label Content="               MainMenu&#xD;&#xA;" HorizontalAlignment="Left" Height="54.667" Margin="291.005,33.333,0,0" VerticalAlignment="Top" Width="216" FontSize="16" FontWeight="Bold" FontFamily="Segoe UI Black" TextOptions.TextFormattingMode="Display"/>
+        <Menu HorizontalAlignment="Left" Height="28.333" Margin="0.991,0,-198.418,0" VerticalAlignment="Top" Width="816.094" Background="#FF4457AA">
+            <MenuItem Header="File&#xD;&#xA;" Height="25.333" Width="236.223" FontSize="16" FontFamily="Stencil"/>
+            <MenuItem Header="Help&#xD;&#xA;" Height="24.667" Width="206.555" FontSize="16" FontFamily="Stencil"/>
+            <MenuItem x:Name="Batch" Header="Preferences&#xA;                      " Height="27.333" Width="157.009" FontSize="16" FontFamily="Stencil"/>
+            <MenuItem Header="" Height="18.333" Width="118"/>
+        </Menu>
+        <MenuItem Header="Batch&#xD;&#xA;" HorizontalAlignment="Left" Height="28.333" Margin="623.752,1,-382.418,0" VerticalAlignment="Top" Width="377.333" FontSize="16" FontFamily="Stencil"/>
+        <Button x:Name="btnAutomaton" Content="Finite Automaton&#xD;&#xA;" HorizontalAlignment="Left" Height="68" Margin="2,134.667,-0.418,0" VerticalAlignment="Top" Width="815.085" FontSize="16" FontFamily="Showcard Gothic" Foreground="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}" Background="{DynamicResource {x:Static SystemColors.MenuHighlightBrushKey}}" Click="go_To_Automaton"/>
+        <Button x:Name="btnRegex" Content="Regular Expression&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Height="61.334" Margin="2,207.667,0,0" VerticalAlignment="Top" Width="813.752" FontFamily="Showcard Gothic" FontSize="16" Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}" Click="go_To_RegexPage"/>
+        <Button Content="LogOut&#xD;&#xA;" Height="37.334" Margin="291.005,345.333,279.661,0" VerticalAlignment="Top" RenderTransformOrigin="0.191,0.607" FontSize="16" FontFamily="Stencil" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}" FontStretch="Expanded" FontWeight="Bold" TextOptions.TextFormattingMode="Display" TextOptions.TextHintingMode="Animated">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+    </Grid>
+</Window>
